@@ -1,0 +1,72 @@
+:root {
+    --borde: #899dae ;
+    --datos: #eff2f5 ;
+    --operar: #d2dce3 ;
+}
+
+body {
+    width: 250px;
+    height: 110px;
+}
+
+div {
+    padding: 3px;
+    text-align: center;
+}
+
+.calculadora {
+    display: grid;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.operar {
+    background-color: var(--operar);
+    
+}
+
+.datos {
+    display: grid;
+    grid-row: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    text-align: right;
+    background-color: var(--datos);
+}
+
+.resultado {
+    color: white;
+    text-align: right;
+    background-color: #424c52;
+}
+
+.igual {
+    padding: 60px 10px 40px 10px;
+    grid-row: span 4;
+    background-color: #f77077;
+    border-top: solid 2px var(--borde);
+    border-left: solid 2px var(--borde);
+}
+
+.izquierda {
+    border-left: solid 2px var(--borde);
+}
+
+.derecha {
+    border-top: solid 2px var(--borde);
+    border-right: solid 2px var(--borde);
+}
+
+.centro {
+    border-top: solid 2px var(--borde) ;
+    border-bottom: solid 2px var(--borde);
+}
+
+.centroArriba {
+    border-right: solid 2px var(--borde);
+}
+
+.arriba {
+    border-top: solid 2px var(--borde);
+}
